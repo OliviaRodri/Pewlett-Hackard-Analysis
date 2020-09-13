@@ -34,6 +34,7 @@ ORDER BY COUNT DESC;
 
 
 
+
 -- Deliverable 2
 
 DROP TABLE mentorship_eligibilty
@@ -64,4 +65,33 @@ FROM mentorship_eligibilty
 ORDER BY emp_no;
 
 
+-- -- -- -- -- -- 
+SELECT DISTINCT ON (emp_no) emp_no,
+title,
+from_date,
+to_date
+INTO total_employees
+FROM titles
+ORDER BY emp_no, to_date DESC;
+
+
+
+
+--number employees by recent title
+SELECT COUNT(*), title 
+INTO all_titles
+FROM total_employees
+GROUP BY title
+ORDER BY COUNT DESC;
+
+SELECT ae.title AS unique_titles, 
+rt.count AS retire_count, 
+ae.count AS all_count,
+100.0*rt.count/ae.count AS Percent_retiring
+INTO percent_retiring
+FROM all_titles AS ae
+INNER JOIN unique_titles AS rt
+ON (ae.title = rt.title)
+GROUP BY ae.count,ae.title
+ORDER BY ae.count;
 
