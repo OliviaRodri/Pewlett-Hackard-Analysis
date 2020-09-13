@@ -59,7 +59,7 @@ The proposed questions may be used to continue the following steps in this analy
 - How many roles will need to be filled?
 - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
-Below are two provided tables from queries created to resolve new concerns:
+Below are two provided tables from queries created to continue to resolve new concerns:
 
 I. Total amount of employees per title at Pewlett-Hackard:
 
