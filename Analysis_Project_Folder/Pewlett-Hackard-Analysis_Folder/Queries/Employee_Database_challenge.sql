@@ -32,7 +32,7 @@ FROM unique_titles
 GROUP BY title
 ORDER BY COUNT DESC;
 
-DROP TABLE mentorship_eligibilty;
+
 
 -- Deliverable 2
 
@@ -59,9 +59,9 @@ SELECT * FROM mentorship_eligibilty
 
 -- Use Dictinct with Orderby to remove duplicate rows
 SELECT DISTINCT ON (emp_no) *
--- INTO unique_titles
+INTO unique_titles
 FROM mentorship_eligibilty
 ORDER BY emp_no;
 
 
-SELECT * FROM titles
+
