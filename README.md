@@ -31,7 +31,7 @@ Results:
 
 - Duplicate employee entries were removed from the table above.  Only the most recent title of each employee was kept to further the analysis. 
   
-- The count of employees retiring per title was retrieved and is shown in the table below.
+- The count of employees retiring per title was retrieved and is shown in the table below:
   
   ![retired_count](Resources/retired_count.PNG)
 
